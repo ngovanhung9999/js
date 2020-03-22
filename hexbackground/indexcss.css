@@ -1,0 +1,22 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#content {
+    width: 600px;
+    margin: 200px 20% 0% 26%;
+    text-align: center;
+}
+
+#btn {
+    margin-top: 15px;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 22px;
+    background-color: gray;
+}
+
+#btn:hover {
+    background-color: darkslategray;
+}
