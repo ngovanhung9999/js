@@ -1,4 +1,60 @@
+:root {
+    --mainWhite: #f5f5f5;
+    --mainGreen: #7fb800;
+    --mainBlue: #0d2c54;
+    --lightBlue: #00a6ed;
+    --mainBlack: #333333;
+}
+
 * {
     margin: 0px;
     padding: 0px;
+}
+
+body {
+    background-image: url(image/mainBcg.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--mainWhite, #000000);
+}
+
+.count {
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 35%;
+    width: 400px;
+    height: 300px;
+    border: solid 1px var(--mainWhite);
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+    font-size: 26px;
+}
+
+#number {
+    margin: 25px 0px 25px 0px;
+    font-size: 90px
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+.prevbtn,
+.nextbtn {
+    background-color: var(--mainBlue);
+    width: 130px;
+    margin: 10px;
+    height: 30px;
+    color: var(--mainWhite);
+    border-radius: 5px;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.9);
+}
+
+.prevbtn:hover {
+    background-color: var(--lightBlue);
+}
+
+.nextbtn:hover {
+    background-color: var(--lightBlue);
 }
