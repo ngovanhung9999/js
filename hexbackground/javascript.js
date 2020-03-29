@@ -12,5 +12,5 @@
         span.innerHTML = hex;
         document.body.style.backgroundColor = hex;
     }
-    changeColor();
+
 })()
