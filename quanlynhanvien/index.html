@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>bai tap</title>
+</head>
+
+<body>
+    <div class="content clearfix">
+        <h1>Bài Tập Hướng Đối Tượng</h1>
+        <div class=" row btnAndEnter">
+            <div class="enterPersonnel">
+                <h3>Thêm Nhân Viên</h3>
+                <div class="listBtn clearfix">
+                    <button class="btnP btnNV">Nhân Viên</button>
+                    <button class="btnP btnQL">Quản Lý</button>
+                    <button class="btnP btnGD">Giám Đốc</button>
+                </div>
+                <form id="inputPerson" name="inputPerson" method="">
+                    <div class="rowInput clearfix">
+                        <label>Họ Và Tên: </label>
+                        <input type="text" name="fullName" />
+                    </div>
+                    <div class="rowInput clearfix">
+                        <label>Ngày Sinh: </label>
+                        <input type="text" name="dateOfBirth" />
+                    </div>
+                    <div class="rowInput clearfix">
+                        <label>Hệ Số Lương: </label>
+                        <input type="text" name="coefficentsSalary" />
+                    </div>
+                    <input id="inputId" name="id" value="" hidden />
+                    <div class="rowInput clearfix">
+                        <label id="privateAttributeName"></label>
+                        <input type="text" name="privateAttribute" />
+                    </div>
+                    <div class="rowInput clearfix">
+                        <input id="buttonGui" type="button" value="Thêm">
+                    </div>
+
+                </form>
+            </div>
+            <div class="btnSelect">
+                <div class="rowSelect">
+                    <span>-Tìm nhân viên có lương cao nhất</span>
+                    <button id="btnHighestSalary" class="buttonSelect">Tìm</button>
+                </div>
+                <div class="rowSelect">
+                    <span>-Tìm nhân viên thuộc phòng ban</span>
+                    <input id="inputTheDepartment" type="text" />
+                    <button id="btnTheDepartment" class="buttonSelect">Tìm</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row listPersonnel">
+            <table id="tableData" class="listData">
+            </table>
+        </div>
+    </div>
+    <script src="class.js"></script>
+    <script src="function.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
